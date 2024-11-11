@@ -1,0 +1,63 @@
+# Ignore compiled object files
+*.o
+*.obj
+
+# Ignore compiled binaries
+*.exe
+*.out
+*.app
+*.dll
+*.so
+*.dylib
+
+# Ignore build directories
+/build/
+/bin/
+/out/
+
+# Ignore temporary files from IDEs or editors
+
+# Visual Studio
+.vscode/
+.vs/
+*.user
+*.userosscache
+*.suo
+*.sln
+*.vcxproj
+*.vcxproj.user
+
+# Eclipse
+.project
+.cproject
+.settings/
+
+# Code::Blocks
+*.cbp
+*.depend
+*.layout
+
+# CLion
+.idea/
+
+# Xcode (macOS)
+*.xcworkspace
+*.xcuserstate
+*.xcodeproj/
+*.xcuserdata/
+
+# Ignore temporary files (swp, backup, etc.)
+*~
+*.swp
+*.bak
+*.tmp
+
+# Ignore log files
+*.log
+
+# Ignore coverage reports and other testing artifacts
+/coverage/
+/test-results/
+
+# Project Specific Ignores
+main
