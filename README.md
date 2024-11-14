@@ -1,6 +1,6 @@
 # Welcome
 
-**N**etwork - **O**perations - **M**onitoring - **A**nd - **D**iagnotics
+${\color{darkslateblue}N}$${\color{cornflowerblue}etwork}$ ${\color{darkslateblue}O}$${\color{cornflowerblue}perations}$ ${\color{darkslateblue}M}$${\color{cornflowerblue}onitoring}$ ${\color{darkslateblue}A}$${\color{cornflowerblue}nd}$ ${\color{darkslateblue}D}$${\color{cornflowerblue}iagnotics}$
 
 Nomad is a personal project aimed at creating a versatile, cross-platform solution designed as a networking monitoring tool. Currently in development, the project is primarily written in C++, with plans to expand into front-end development using React and hardware integration.
 
@@ -21,6 +21,7 @@ To get started with Nomad, clone the repository and follow the instructions belo
 
 ### Clone the Repository
 
+```bash
 git clone https://github.com/ryansetzer/nomad.git
 cd nomad
 g++ main.cpp network-check.cpp -o main
