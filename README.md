@@ -1,7 +1,7 @@
 
 # Welcome
 
-${\color{darkslateblue}N}$etwork ${\color{darkslateblue}O}$perations ${\color{darkslateblue}M}$onitoring ${\color{darkslateblue}A}$nd ${\color{darkslateblue}D}$iagnotics
+${\color{darkslateblue}N}etwork$ ${\color{darkslateblue}O}perations$ ${\color{darkslateblue}M}onitoring$ ${\color{darkslateblue}A}nd$  ${\color{darkslateblue}D}iagnotics$
 
 Nomad is a personal project aimed at creating a versatile, cross-platform solution designed as a networking monitoring tool. Currently in development, the project is primarily written in C++, with plans to expand into front-end development using React and hardware integration.
 
