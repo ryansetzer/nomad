@@ -4,20 +4,15 @@
 #include <unordered_map>
 
 /*User defined files*/
+#include "cli-ops.h"
 #include "main.h"
 #include "network-check.h"
 
-const std::string name = "NOMAD";
-const std::string YELLOW = "\u001b[33m";
-const std::string RESET = "\u001b[0m";
 
 
 int main() {
-  std::cout << "Running: ";
-  for (char c : name) {
-    std::cout << YELLOW << c << RESET << ".";
-  }
-  std::cout << "\n";
+
+  display_welcome();
 
   std::unordered_map<std::string, int> interfacesSum;
   NetInterfaceQuery niq;
