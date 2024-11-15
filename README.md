@@ -11,6 +11,9 @@ Nomad is a personal project aimed at creating a versatile, cross-platform soluti
 - **Modular architecture:** Designed for easy extension, from hardware integration to front-end development.
 - **Future integrations:** Planned front-end in React, hardware development, and IO capabilities.
 
+## Hardware
+Check out this [link](https://www.circuito.io/app?components=514,11022,11372,11372,11372,164792,299273,466193,860025) for the wiring diagram (done by circuito.io)
+
 ## Installation
 
 To get started with Nomad, clone the repository and follow the instructions below.
