@@ -10,6 +10,7 @@ struct NetInterfaceQuery {
   std::unordered_map<int, int> mappings;
 };
 
+void fetchNetInfo();
 void fetchNetInterfacesInfo(NetInterfaceQuery &);
 std::string getPrimaryIpAddress();
 

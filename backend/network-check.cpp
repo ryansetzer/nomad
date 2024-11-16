@@ -13,6 +13,37 @@
 #include <sys/types.h>
 
 
+void fetchNetInfo() {
+  // Creating and filling out Network Interface Struct
+  NetInterfaceQuery niq;
+  fetchNetInterfacesInfo(niq);
+
+  std::cout << "Main Interface: " << niq.mainIPInterfaceName << std::endl;
+  std::cout << "Main IP: " << niq.mainIPAddress << std::endl;
+
+  int unknownInterfaces = 0;
+  // Iterating through all found Interfaces
+  for (const auto& [key, value] : niq.mappings) {
+    switch (key) {
+      // IPv4
+      case AF_INET:
+        std::cout << "IPv4: " << value << std::endl;
+        break;
+      // IPv6
+      case AF_INET6:
+        std::cout << "IPv6: " << value << std::endl;
+        break;
+      // Unknown
+      default:
+        unknownInterfaces += 1;
+        break;
+    }
+  }
+  // Interface(s) not found in Switch Statement
+  if (unknownInterfaces > 0) std::cout << "Unknown: " << unknownInterfaces << std::endl;
+} 
+
+
 void fetchNetInterfacesInfo(NetInterfaceQuery & niq) {
   // Address Structs
   struct ifaddrs * interfaces = nullptr;
