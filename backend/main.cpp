@@ -19,5 +19,6 @@ int main() {
       nd.interface <<
       std::endl;
   }
+  std::cout << "Internet Connected: " << (internetCheck() ? "true" : "false") << std::endl;
   return 1;
 }

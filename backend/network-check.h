@@ -13,5 +13,6 @@ struct NetInterfaceQuery {
 void fetchNetInfo();
 void fetchNetInterfacesInfo(NetInterfaceQuery &);
 std::string getPrimaryIpAddress();
+bool internetCheck();
 
 #endif

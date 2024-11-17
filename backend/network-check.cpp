@@ -2,6 +2,7 @@
 #include "network-check.h"
 // External
 #include <arpa/inet.h>
+#include <cstdlib>
 #include <cstring>
 #include <ifaddrs.h>
 #include <iostream>
@@ -91,5 +92,29 @@ void fetchNetInterfacesInfo(NetInterfaceQuery & niq) {
   // Set the main IP and interface name in the query
   niq.mainIPAddress = primaryIp.empty() ? "Unknown" : primaryIp;
   niq.mainIPInterfaceName = mainInterfaceName.empty() ? "Unknown" : mainInterfaceName;
+}
+
+bool internetCheck() {
+  // Collection of Pingable External
+  // Sites to Check Internet Connectivity
+  std::string externalSources[] = {
+    "google.com",
+    "cnn.com",
+    "github.com",
+    "8.8.8.8",
+    "8.8.4.4",
+  };
+
+  bool connected = true;
+  
+  std::string command;
+  int result;
+  for (const auto & source : externalSources) {
+    command = "ping -c 1 " + source + " > /dev/null 2>&1";
+    result = system(command.c_str());
+    connected = connected || result == 0;
+  }
+
+  return connected;
 }
 
