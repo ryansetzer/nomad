@@ -28,6 +28,6 @@ To get started with Nomad, clone the repository and follow the instructions belo
 ```bash
 git clone https://github.com/ryansetzer/nomad.git
 cd nomad
-g++ main.cpp network-check.cpp -o main
+./compile.sh
 ./main
 
