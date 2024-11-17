@@ -1,4 +1,3 @@
-
 # Welcome
 
 ${\color{darkslateblue}N}etwork$ ${\color{darkslateblue}O}perations$ ${\color{darkslateblue}M}onitoring$ ${\color{darkslateblue}A}nd$  ${\color{darkslateblue}D}iagnotics$
@@ -13,6 +12,7 @@ Nomad is a personal project aimed at creating a versatile, cross-platform soluti
 
 ## Hardware
 Check out this [link](https://www.circuito.io/app?components=514,11022,11372,11372,11372,164792,299273,466193,860025) for the wiring diagram (done by circuito.io)
+![hardware-diagram](https://github.com/ryansetzer/nomad/blob/main/images/wiring-diagram-arduino-nano.png/?raw=true)
 
 ## Installation
 
